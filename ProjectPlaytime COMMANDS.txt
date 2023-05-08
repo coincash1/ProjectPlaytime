@@ -1,0 +1,137 @@
+NOTE: When you're putting any command in, Don't have a space at the end. I tested almost everything here and they work. Have fun! BY GameGuardian#0179
+
+
+Fun Commands
+----------------------------------------------------------------------------------------
+ToggleDebugCamera
+Teleport
+DestroyTarget
+Slomo x
+Gamma x
+ChangeSize x
+Setname x
+Say x
+Fov 1-120+
+Pause
+show
+showdebug
+stat fps
+stat unit
+stat level
+camera firstperson
+camera thirdperson
+god
+
+
+
+Rendering
+----------------------------------------------------------------------------------------
+sg.PostProcessQuality 0
+r.MotionBlurQuality 		 (Controls Motion Blur)  (0-5) 0 = Motion Blur Off / 5 = Motion Blur Max 
+r.BloomQuality 			 (Controls Bloom)  (0-5) 0 = Off / 5 = Bloom Max
+r.DepthOfFieldQuality 		 (Controls Depth Of Field)  (0-5) 0 = Off / 5 = DOF Max
+r.EyeAdaptationQuality 		 (<=0 For Brightness Below The Average Amount The Game Allows You To Use) / 3 Max Brightness
+sg.ShadowQuality 		 (Controls Shadows)  (0-5) 0 = Off / 5 = Max
+sg.TextureQuality		 (Controls Texture Quality) (0-5) 0 = Worst Possible Textures / 4 = Best Texture Quality
+r.SetRes 			 (1280x720,1920x1080,3840x2470,950x565,1000x1000,1440x1080) Choose Any Resolution You Need
+r.AmbientOcclusionRadiusScale	 (This Increases Or Decreases The SSAO) 0 = Off / >1 Biggest 
+r.AOQuality 			 (Increases AO) 0 = Off / 2 = Highest
+r.PostProcessAAQuality	 	 (Increases FXAA) 0 = Off / 6 = Max
+
+Interesting Commands:
+r.ScreenPercentage 		 (>0 Is The lowest Amount Of Pixels On Screen) / 100 = Max Screen Percentage (You Can Go Over 100 But The Performance Will Reduce Drastically Not Recommended To Go Over 200)
+r.ViewDistanceScale 		 (can be used in 0.0 / 0.00 / 0.000) (Default Distance Of Where You Can See Objects Is 1 But You Can Change This By Doing 0.50 0.25 0.10 0.010 And So On Its More Of An Experimental Command)
+r.LandscapeLODBia`s		 (This Command Completely Breaks The Game And Moves Objects Houses Trees Roads And Everything To Where They Arent Supposed To Be) 1 = Default / 10 = Insane / 100 = Max
+
+EXAMPLE: 			 (Open Season 1 With The Unlocker And Press The Command Key Next To The Number 1 On Your Keyboard)
+r.MotionBlurQuality 0
+r.MotionBlurQuality 5		 (Be Aware You Can Use Numbers In Between Too For Most Commands) 
+r.MotionBlurQuality 0 / r.MotionBlurQuality 1 / r.MotionBlurQuality 2 / r.MotionBlurQuality 3 / r.MotionBlurQuality 4 / r.MotionBlurQuality 5 /
+r.BloomQuality 0 / r.BloomQuality 1 / r.BloomQuality 2 / r.BloomQuality 3 / r.BloomQuality 4 / r.BloomQuality 5 /
+
+
+
+ETC
+----------------------------------------------------------------------------------------
+I think does something?
+summon BP_GameManager_C (CHANGES TOY'S NEEDED? or Turns Toys Lights Off? IDK)
+
+
+Spawns
+----------------------------------------------------------------------------------------
+SUMMON BLUEPRINTS: 
+summon BP_ToyPart_C (Use once)
+summon BP_Locker_C
+summon BP_PullDownDoor_C
+summon BP_TrainCall_C
+
+
+Killer BLUEPRINTS:
+summon BP_BabyHuggy_C
+summon BP_WebProjectile_C
+
+
+AI STAND BLUEPRINTS:
+summon BP_HuggyJumpscare_C
+summon BP_PlayerPreview_C
+
+
+AI BLUEPRINTS:
+summon BP_NetworkCharacter_C  (AI WITH ANIMATIONS AND SOUNDS BUT NO MOVEMENT!!!!)(Works only in open areas)
+summon BP_NetworkHuggy_C      (AI WITH ANIMATIONS AND SOUNDS BUT NO MOVEMENT!!!!)(Works only in open areas)
+summon BP_NetworkMommy_C      (AI WITH ANIMATIONS AND SOUNDS BUT NO MOVEMENT!!!!)(Works only in open areas)
+summon BP_NetworkBoxy_C       (AI WITH ANIMATIONS AND SOUNDS BUT NO MOVEMENT!!!!)(Works only in open areas)
+
+
+Mesh Spawns/Puzzels
+----------------------------------------------------------------------------------------
+Huggy sewer BLUEPRINTS:
+summon BP_WhackAWuggySpawnPoint
+summon BP_WormholeEntrance_C
+summon BP_WuggyHole_C
+
+
+PUZZLE BLUEPRINTS:
+summon BP_PuzzlePillar_C
+summon BP_Puzzle_Memory_C
+summon BP_Puzzle_Piano_C
+summon BP_Puzzle_Reflex_C
+summon BP_PuzzlePowerSource_C
+summon BP_Puzzle_Maze_C
+summon BP_Puzzle_Claw_C
+summon BP_WireBoard_C
+summon BP_WireConnect_C
+
+
+Other BLUEPRITNTS (KINDA STUPID STUFF)
+----------------------------------------------------------------------------------------
+summon BP_NetworkTrain_C (Collosion off) (TRAIN)
+summon BP_TrainStation_C (Collosion off) (TRAIN)
+summon BP_TrainCart_C (Collosion on) (TRAIN)
+summon BP_ToyMachine_C (Collosion on) (Big)
+summon BP_ToyMachineDeposit_C  (Collosion on) (Medium) (Spawns facing ur right)
+summon BP_HideBox_C (Useless)
+summon BP_PuzzleDoor_C (Useless)
+summon BP_PseudoHand_C
+summon BP_FailAnim_C
+summon BP_MP_HandPanel_C
+summon BP_Tooltip_C
+summon BP_NavHuggyScream_C
+
+
+
+
+MAPS
+----------------------------------------------------------------------------------------
+open MainMenu
+open MainMenu_MP_MonsterMenu
+open Map_01_MP_Lobby
+open MP_Lobby
+open MP_Tutorial
+open MP_Tutorial_Monster
+open Map01_WuggyHole
+open WuggyHole
+open WuggyHole_Monster
+open PlaytimeFactory_Floor
+open PlaytimeFactory_Skylight
+open Blockout_Map_07
